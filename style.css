@@ -1,0 +1,19 @@
+#titulo{
+    color: navy;
+    
+}
+
+table{                  /*Cambia color de la tabla*/
+    color: darkblue;
+    text-align: center;
+    font-size: 20px; 
+}
+
+.horas{                 /*Cambia tamaño de las horas*/
+    font-size: 17px;
+    
+}
+
+.finde{                 /*Cambia el color de los fines de semana*/
+    color: darkgreen;
+}

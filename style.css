@@ -6,33 +6,41 @@
 .contenedor{
     display: grid;
     grid-template-areas: "header header header"
-                         "alta alta alta"
-                         "aside main main"
-                         "baja baja baja"
+                         "ima ima ima"
+                         "main main main"
                          "footer footer footer";
 }
 
 .headeruno{                     /*Color, tamaño y fuente al header principal*/
 
-    background-color: #7fadcd;
+    background-color: #7fadcd;       
+    color: rgba(245, 245, 245, 0.83);
     font-family: sans-serif;
     text-transform: uppercase;
-
+    background-image: url(footer.jpg);
     width: 100%;
     height: 30vh;
-    padding-left: 10px;
+    
     grid-area: header;
     
 }
-
+.imagen{                    
+    background-image: url(Tanque.jpg);
+    background-size: 1500px 500px;
+    grid-area: ima;
+    height: 60vh;
+    width: 100%;
+}
 .navuno{                        /*Color, tamaño y fuente al nav principal*/
     font-weight: 400;
     text-transform: none;
     list-style: none;
+    height: 20vh;
+    padding-top: 2.5vh;
     margin-top: 20px;
-    padding-left: 10px;
-
-
+    background-color: #7fadcd99;
+    margin-left: 2vh;
+    margin-right: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,60 +49,24 @@
 
 }
 
-.barra-alta{
-    background-color: navy;
-    width: 100%;
-    height: 3vh;
-    grid-area: alta;
-}
-
-
 
 .mainuno{                       /*Color, tamaño y fuente al main principal*/
     
-    background-color: #7fadcd;
+    background-image: url(footer.jpg);
+    background-size: contain;
     font-family: sans-serif;
-    
-   
     width: 100%;
-    height: 30vh;
-   
-    padding-left: 10px;
+    height: 50vh;
     grid-area: main;
     
     
 }
 
 .section{
-    padding: 20px;
-}
-
-.aside-uno{
-    width: 20%;
-    grid-area: aside;
-    
-    
-}
-
-.barra-baja{
-    background-color: navy;
-    width: 100%;
-    height: 3vh;
-    grid-area: baja;
-}
-
-.footeruno{                     /*Color, tamaño y fuente al footer principal*/
-    background-color: #7fadcd;
-    font-family: sans-serif;
-    text-align: justify;
-
-    width: 100%;
-    height: 15vh;
-    padding-left: 5px;
-    padding-top: 10px;
-
-    grid-area: footer;
-
+    margin: 2vh;
+    padding: 3px;
+    background-color: #7fadcdb9;
+    height: 50vh;
 }
 
 .navdos{
@@ -104,9 +76,27 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 10vh;
+}
 
+
+.footeruno{                     /*Color, tamaño y fuente al footer principal*/
+    background-color: #7fadcd;
+    color: rgba(245, 245, 245, 0.785);
+    font-family: sans-serif;
+    text-align: justify;
+    background-image: url(footer.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+
+    padding-top: 10px;
+
+    grid-area: footer;
 
 }
+
+
 
 .formuno{                       /*Diseño de los bordes, color, fuente y tamaño de la separación*/
    border: solid 2px;
@@ -121,10 +111,14 @@
 
 }
 
+.contacto{
+    background-image:url(Camara.jpg);
+    
 
+}
 
 #titulo{
-    color: navy;
+   color: rgb(9, 76, 15);
     
 }
 
@@ -136,7 +130,7 @@ table{                           /*Color de la tabla*/
 
 .horas{                          /*Tamaño de las horas*/
     font-size: 17px;
-    
+    background-color: whitesmoke;
 }
 
 .finde{                         /*Color de los fines de semana*/
@@ -145,9 +139,14 @@ table{                           /*Color de la tabla*/
 
 .tablas{
     font-family: sans-serif;
+    background-image: url(Oficina.jpg);
+    background-size:cover;
+    margin-left: 70vh;
+    margin-top: 10vh;
 }
 
 .horarios{
     width: 40%;
+    background-color: whitesmoke;
 }
 

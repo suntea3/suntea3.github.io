@@ -8,51 +8,113 @@
        <link rel="stylesheet" href="style.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+              rel="stylesheet">
 </head>
 
 <body>
-<div class="contenedor">
-<header class="headeruno">
-       <h1> Sherman Seguridad S.A. </h1> <br>
-       <h2> Seguridad privada </h2> <br> <br>
-       <h3> Habilitados en toda la provincia de Buenos Aires, Santa Fe, C.A.B.A. </h3>
-       
-       <nav>
-              <ul class="navuno">
-                  <li><a href="contacto.html"target="_blank">Contacto</a></li>
-                  <li><a href="tablas.html" target="_blank">Horarios de atención</a></li>
-                  <li><a href="#Historia">¿Quienes Somos?</a></li>
-               </ul>
+       <div class="contenedor">
+              <header class="headeruno">
+                     <h1 id="Arriba"> Sherman Seguridad S.A. </h1> <br>
+                     <h2> Seguridad privada </h2> <br> <br>
+                     <h3> Habilitados en toda la provincia de Buenos Aires, Santa Fe, C.A.B.A. </h3>
 
-       </nav>
-</header>
-<div class="imagen">
-       
- </div>
+                     <nav>
+                            <ul class="navuno">
+                                   <li><a href="contacto.html" class="linkuno" target="_blank">Contacto</a></li>
+                                   <li><a href="tablas.html" class="linkuno" target="_blank">Horarios de atención</a>
+                                   </li>
+                                   <li><a href="#Historia" class="linkuno">¿Quienes Somos?</a></li>
+                                   <li class="esconder"><a href="#Planilla" class="linkuno">Integrantes</a></li>
+                            </ul>
+                     </nav>
+              </header>
 
-<main class="mainuno">
-              <section class="section">
-                    <article> <br><br><p id="Historia">Somos una empresa de seguridad destinada a la protección de bienes y personas las 24 horas de los 365 días del año,
-                     con una flota de vehículos y más de 50 empleados enfocados en resguardar su forma de vida.<br>
-                     Nos encontramos habilitados en Buenos Aires, Santa Fe, Ciudad Autónoma de Buenos Aires, y todos los puertos del
-                     país.<br>A su vez desarrollamos custodias de mercadería en tránsito.</p>
-                     </article> 
-              </section>
-</main>
-     
-       <footer class="footeruno">
-              <ul class="navdos">
-                     <li><a href="https://www.instagram.com/sherman_seguridad/"target="_blank">Instagram</a></li>
-                     <li><a href="https://wa.me/543364313350?text=Hola, quisiera hablar con alguien" target="_blank">Whatsapp</a></li>
-                     <li><a href="https://www.instagram.com/sherman_seguridad/"target="_blank">Planilla de clientes</a></li>
-               </ul>
-               <p>Página diseñada por Santiago Olivera</p>
-       </footer>
-</div>
-<script src="mayor.js"> </script>   
+              <div class="imagen">
+
+              </div>
+              <main class="mainuno">
+                     <section class="section">
+                            <article> <br><br>
+                                   <h1 id="Historia" class="tituloarticulo">¿Quienes Somos?</h1> <br>
+                                   <p class="articulo"> Somos una empresa de seguridad destinada a la protección de
+                                          bienes y
+                                          personas las 24 horas de los 365 días del año,
+                                          con una flota de vehículos y más de 50 empleados enfocados en resguardar su
+                                          forma de vida.<br>
+                                          Nos encontramos habilitados en Buenos Aires, Santa Fe, Ciudad Autónoma de
+                                          Buenos Aires, y todos los puertos del
+                                          país.<br>A su vez desarrollamos custodias de mercadería en tránsito.</p>
+                            </article>
+
+                     </section>
+                     <section class="sectiondos">
+                            <h1 id="Planilla" class="titulointegrantes">Integrantes</h1> <br>
+                            <table class="integrantes">
+
+                                   <tr class="integrantes">
+                                          <td>Natalia Franco</td>
+                                          <td><img src="Natalia.jpeg" alt="Natalia Franco" class="imagentabla"></td>
+                                   </tr>
+                                   <tr class="integrantes">
+                                          <td>Fernando De La Cruz</td>
+                                          <td><img src="Fernando.jpeg" alt="Fernando De La Cruz" class="imagentabla">
+                                          </td>
+                                   </tr>
+                                   <tr class="integrantes">
+                                          <td>Jesus Lacombe</td>
+                                          <td><img src="Jesus.jpeg" alt="Jesus Lacombe" class="imagentabla"></td>
+                                   </tr>
+                                   <tr class="integrantes">
+                                          <td>Mario Aguiar</td>
+                                          <td><img src="Mario.jpeg" alt="Mario Aguiar" class="imagentabla"></td>
+                                   </tr>
+                                   <tr class="integrantes">
+                                          <td>Antonella Cantero</td>
+                                          <td><img src="Antonella.jpg" alt="Antonella Cantero" class="imagentabla"></td>
+                                   </tr>
+
+                            </table>
+                     </section>
+                     <section class="sectiontres">
+                            <h1 class="horahombre">Calcular hora-hombre</h1><br>
+                            <button class="boton" onclick="horahombre()">Calcular</button>
+                     </section>
+              </main>
+
+              <footer class="footeruno">
+                     <ul class="navdos">
+                            <li><a href="https://www.instagram.com/sherman_seguridad/" target="_blank"
+                                          class="linkuno">Instagram</a></li>
+                            <li><a href="https://wa.me/543364313350?text=Hola, quisiera hablar con alguien"
+                                          target="_blank" class="linkuno">Whatsapp</a></li>
+                            <li><a href="NOMINA DE CLIENTES ACTUAL-2024.pdf" download="Nomina de clientes"
+                                          class="linkuno">Descargar planilla de clientes</a></li>
+                     </ul>
+                     <section class="superior">
+                            <a href="#Arriba" class="linkuno">Regresar a la parte superior de la página</a>
+                     </section>
+                     <p>Página diseñada por Santiago Olivera</p>
+              </footer>
+       </div>
+       <script src="mayor.js"> </script>
+       <script src="salida.js"></script>
+       <script>
+              function horahombre() {
+                     var hora = prompt("Introduzca la cantidad de horas que necesitaría el servicio");
+                     var precio = 900;
+                     if (hora <= 0) {
+
+                            alert("Introduzca un valor válido")
+
+                     } else {
+                            alert("El costo sería de: $" + (precio * hora) + " por cada hombre");
+                     }
+
+              }
+       </script>
 </body>
+
 </html>
 
 

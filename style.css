@@ -1,9 +1,11 @@
-*{
+*{                                  /*Default*/
     margin: 0px;
     padding: 0px;
 }
 
-.contenedor{
+                            /*ESTILOS DEL INDEX*/
+
+.contenedor{                        /*Estructura*/      
     display: grid;
     grid-template-areas: "header header header"
                          "ima ima ima"
@@ -11,33 +13,35 @@
                          "footer footer footer";
 }
 
-.headeruno{                     /*Color, tamaño y fuente al header principal*/
 
-    background-color: #7fadcd;       
+.headeruno{                         /*Color, tamaño y fuente al header principal. Definimos lugar en el grid*/
+
+    background-color:#7fadcd;
     color: rgba(245, 245, 245, 0.83);
     font-family: sans-serif;
     text-transform: uppercase;
     background-image: url(footer.jpg);
     width: 100%;
-    height: 30vh;
-    
+    height: 40vh;
     grid-area: header;
     
 }
-.imagen{                    
+
+.imagen{                            /*Tamaño, imagen, ancho y altura de la misma. Definimos lugar en el grid*/
     background-image: url(Tanque.jpg);
-    background-size: 1500px 500px;
+    background-size: 1680px 500px;
     grid-area: ima;
     height: 60vh;
     width: 100%;
 }
-.navuno{                        /*Color, tamaño y fuente al nav principal*/
+
+.navuno{                            /*Color, tamaño, fuente, alineación del texto y display general al nav principal*/
     font-weight: 400;
     text-transform: none;
     list-style: none;
-    height: 20vh;
-    padding-top: 2.5vh;
-    margin-top: 20px;
+    height: 8vh;
+    padding-top:4vh;
+    margin-top: 5vh;
     background-color: #7fadcd99;
     margin-left: 2vh;
     margin-right: 2vh;
@@ -45,32 +49,92 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-
 }
 
 
-.mainuno{                       /*Color, tamaño y fuente al main principal*/
+.mainuno{                           /*Color, tamaño,fuente, y lugar del grid al main principal*/
     
     background-image: url(footer.jpg);
     background-size: contain;
     font-family: sans-serif;
     width: 100%;
-    height: 50vh;
+    height: 148vh;
     grid-area: main;
-    
-    
 }
 
-.section{
+.tituloarticulo{                    /*Color, tamaño,fuente del titulo del articulo*/
+    font-family: sans-serif;
+    text-align-last: center;
+    color: navy;
+    font-weight: 800;
+}
+
+.articulo{                          /*Centramos y damos márgenes al artículo*/
+
+    text-align: justify;
     margin: 2vh;
-    padding: 3px;
-    background-color: #7fadcdb9;
-    height: 50vh;
 }
 
-.navdos{
-    margin-bottom: 60px;
+.section{                           /*Color, borde, y margen a la caja que contiene el artículo*/
+    margin: 2vh;
+    padding: 1vh;
+    background-color: #7fadcdb9;
+    height: 35vh;
+    border-radius: 5vh;
+}
+
+.sectiondos{                        /*Color, borde, y margen a la caja que contiene a la tabla de integrantes*/
+    margin: 2vh;
+    padding: 1vh;
+    background-color: #7fadcdb9;
+    height: 90vh;
+    border-radius: 5vh;
+}
+
+.titulointegrantes{                 /*Diseño del título de la tabla*/
+    text-align: center;
+    font-family: sans-serif;
+    font-weight:700;
+    color:navy;    
+}
+
+.integrantes{                       /*Diseño de la tabla*/
+    width: 70vh;
+    background-color:  rgba(211, 211, 211, 0.712);
+    border: solid;
+    margin: auto;
+}
+
+.esconder{                           /*Creada unicamente para esconder la opción de "integrantes" en el nav cuando el maxwith es <= 
+                                    320px*/
+    font-family: sans-serif;
+}
+
+.imagentabla{                       /*Altura de todas las fotos de la tabla*/
+    height: 15vh;
+}
+
+.horahombre{                        /*Diseño del título de la calculadora de horas-hombre*/
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 10vh;
+    color: navy;
+}   
+.boton{                             /*Centramos el botón de la calculadora de hora-hombre*/
+    display: block;
+    margin: auto;
+}
+
+.sectiontres{                       /*borde, altura, color, y margen de la caja contenedora de la calculadora de horas-hombre */
+
+    background-color:#7fadcddb;
+    border-radius: 3vh;
+    margin: 5vh;
+    height: 10vh;
+}
+
+.navdos{                            /*margen display, estilo de el nav de las redes sociales y el descargador de la planilla*/
+    margin-bottom: 10vh;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -79,8 +143,13 @@
     margin-top: 10vh;
 }
 
+.linkuno{                           /*Color y estilo al texto donde están los hipervinculos del instagram, whatsapp, el descargador,
+                                     y los botones de regreso a la página principal*/
+    color:  rgba(245, 245, 245, 0.785);
+    text-decoration: none;
+}
 
-.footeruno{                     /*Color, tamaño y fuente al footer principal*/
+.footeruno{                         /*Color, tamaño, fuente, imagen del mismo, y lugar en el grid al footer principal*/
     background-color: #7fadcd;
     color: rgba(245, 245, 245, 0.785);
     font-family: sans-serif;
@@ -88,67 +157,208 @@
     background-image: url(footer.jpg);
     background-size: cover;
     width: 100%;
-    height: 25vh;
-
-    padding-top: 10px;
-
+    height: 30vh;
+    padding-top: 2vh;
     grid-area: footer;
-
 }
+.superior{
+        margin-left: 75vh;
+}
+a:hover{                            /*Al colocar el cursor sobre los hipervinculos, se ve un color azul navy*/
+    color: navy;
+}
+                        /*ESTILOS DEL FORM DE CONTACTO*/
 
-
-
-.formuno{                       /*Diseño de los bordes, color, fuente y tamaño de la separación*/
+.formuno{                           /*Diseño de los bordes, color, fuente y tamaño de la separación de el form de contactos*/
    border: solid 2px;
    border-color: #7fadcd;
    background-color: #7fadcd;
    width: 70vh;
    height: 100vh;
    font-family: sans-serif;
-   padding-left: 20px;
-   padding-top: 20px;
-   padding-bottom: 40px;
+   padding-left: 3vh;
+   padding-top: 3vh;
+   padding-bottom: 6vh;
 
 }
 
-.contacto{
-    background-image:url(Camara.jpg);
-    
-
+.contacto{                          /*Imagen del fondo de el form de contacto. Aclaracion, el tamaño se dejo así porque esteticamente se ve bien*/
+    background-image:url(Camara.jpg);  
 }
 
-#titulo{
-   color: rgb(9, 76, 15);
-    padding-left: 5vh;
-    
-    
+.regresocontacto{                   /*Estilo del hipervinculo para volver a la página principal*/
+     text-decoration: none;
+     color: white;
+}
+.botoncontacto{                     /*Margen de la caja que contiene al hipervinculo para mejor disposición estética*/
+    margin-left: 10vh;
+   
 }
 
-table{                           /*Color de la tabla*/
+                        /*ESTILOS DE HORARIOS DE ATENCIÓN*/
+
+
+#titulo{                            /*Color y orientación del título de la tabla de horarios de atención*/
+    color: rgb(9, 76, 15);
+    align-self: center;
+    text-align: center; 
+}
+
+table{                              /*Color de la tabla de horarios de atención*/
     color: darkblue;
     text-align: center;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
-.horas{                          /*Tamaño de las horas*/
+.horas{                             /*Tamaño y color de la fuente de las horas dentro de la tabla*/
     font-size: 17px;
     background-color: whitesmoke;
+    font-family:sans-serif;
+    font-style: italic;
+    
+    
 }
 
-.finde{                         /*Color de los fines de semana*/
+.finde{                             /*Color de los fines de semana dentro de la tabla*/
     color: darkgreen;
+    
 }
 
-.tablas{
+.tablas{                            /*Imagen de fondo, fuente, y márgenes de la tabla de horarios de atención*/
     font-family: sans-serif;
     background-image: url(Oficina.jpg);
     background-size:cover;
-    margin-left: 70vh;
+  
     margin-top: 10vh;
 }
 
-.horarios{
+.horarios{                          /*Ancho y color del fondo de los días en la tabla de horarios de atención*/      
     width: 40%;
     background-color: whitesmoke;
+    border: solid;
+    margin: auto;
+}
+
+.negrita{                           /*Estilo de los días de la semana de la tabla de horarios de atención*/
+    font-family: sans-serif;
+    font-weight: 800;
+    
+}
+
+.regreso{                           /*Estilo del botón de regreso a la página principal*/
+    font-size: 3vh;
+    margin: 75vh;
+    margin-top: 10vh;
+  
+}
+
+
+                /*MODIFICACIONES PARA HACERLO MAS RESPONSIVE*/
+
+@media only screen and (max-width:320px){                   /*Modificaiones para tamaño móbil*/
+
+    .contenedor{
+      display: grid;
+      grid-template-areas: "header"
+                            "ima"
+                           "main"
+                           "footer"
+                           ;
+    }
+     .sectiondos, .titulointegrantes,.integrantes,.sectiontres, .superior,.esconder {
+        display: none;
+    }
+
+    .mainuno{
+        height: 75vh;
+    }
+
+    .navuno{
+        margin: 0px;
+    }
+    .imagen{
+        background-size: 320px 500px ;
+     }
+    
+    .section{
+        height: 70vh ;
+    }
+    .footeruno{
+        height: 30vh;
+     }
+   
+    
+  
+  }
+  @media only screen and (max-width:500px) and (min-width:321px){   /*Modificaiones para tamaño tablet 1*/
+
+    .contenedor{
+      display: grid;
+      grid-template-areas: "header header"
+                            "ima ima"
+                           "main main"
+                           "footer footer"
+                           ;
+                    
+    }
+
+     .sectiontres,.superior {
+        display: none;
+    }
+    .headeruno{
+        height: 50vh;
+    }
+    .navuno{
+        width: 100%;
+        margin: 0px;
+    
+
+    }
+    .mainuno{
+        height: 160vh;
+    }
+    .section{
+        height: 60vh;
+    }
+    .imagen{
+       background-size: 500px 500px ;
+    }
+    .footeruno{
+        height: 30vh;
+    }
+    .sectiondos{
+        height: 90vh;
+        width: 80%;
+    }
+  
+    .integrantes{
+        width: 80%;
+    }
+}
+
+  @media only screen and (max-width:768px) and (min-width:501px){       /*Modificaiones para tamaño tablet 2*/
+
+    .contenedor{
+      display: grid;
+      grid-template-areas: "header header"
+                            "ima ima"
+                           "main main"
+                           "footer footer"
+                           ;
+                    
+    }
+    .sectiontres, .superior{
+        display: none;
+    }
+    .mainuno{
+        height: 135vh;
+    }
+    .imagen{
+       background-size: 768px ;
+    }
+  
+    .sectiondos,.integrantes{
+        width: 90%;
+    }
 }
 

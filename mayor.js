@@ -1,5 +1,5 @@
 do {
-    var edad = prompt ("Es usted mayor de edad?")
+    var edad = prompt ("Es usted mayor de edad? (SI/NO)")
     var permiso = false
     if (edad.toLowerCase() == "si"){
         alert("Bienvenido")
